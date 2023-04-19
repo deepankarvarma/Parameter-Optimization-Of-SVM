@@ -33,13 +33,13 @@ for(i in 1:8) {
 }
 
 # Boxplots for each column
-# par(mfrow=c(3,3))
-# for(i in 1:8) {
-#   boxplot(df[,i], main=names(df)[i])
-# }
+par(mfrow=c(3,3))
+for(i in 1:8) {
+  boxplot(df[,i], main=names(df)[i])
+}
 
 # Scatterplot matrix
-# pairs(df[,1:8], main="Scatterplot Matrix")
+pairs(df[,1:8], main="Scatterplot Matrix")
 
 # Cross-tabulation of Class and Area
 table(df$Class, df$Area)

@@ -26,7 +26,13 @@
 16.)ShapeFactor4 (SF4)<br>
 17.)Class (Seker, Barbunya, Bombay, Cali, Dermosan, Horoz and Sira)<br>
 ### Scatter Plot
-![Scatter Plot](https://github.com/deepankarvarma/Parameter-Optimization-Of-SVM/blob/master/Scatter%20Plot.png)
+![Scatter Plot](https://github.com/deepankarvarma/Parameter-Optimization-Of-SVM/blob/master/images/Scatter%20Plot.png)
 <br>
-### Historgram
-![Historgram](https://github.com/deepankarvarma/Parameter-Optimization-Of-SVM/blob/master/Histogram.png)
+### Histogram
+![Histogram](https://github.com/deepankarvarma/Parameter-Optimization-Of-SVM/blob/master/images/Histogram.png)
+<br>
+### Box Plot
+![Box Plot](https://github.com/deepankarvarma/Parameter-Optimization-Of-SVM/blob/master/images/Box%20Plot.png)
+<br>
+### Accuracy Plot
+![Accuracy](https://github.com/deepankarvarma/Parameter-Optimization-Of-SVM/blob/master/images/Accuracy%20Plot.png)

@@ -1,6 +1,6 @@
-# Parameter Optimization of SVM | Assignment 5
+# Parameter Optimization of SVM Using Dry Bean Dataset
 
-## Dry Bean Dataset
+## Assingment 5
 
 ### 1. Number of Instances: 13611
 

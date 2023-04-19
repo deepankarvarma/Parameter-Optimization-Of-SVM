@@ -31,7 +31,7 @@ for(sample_num in 1:10){
   bestKernel=""
   bestNu=0
   bestEpsilon=0
-  iteration=10
+  iteration=1000
   kernelList=c('rbfdot','polydot','vanilladot','tanhdot','laplacedot','anovadot')
   # Split the data into 70:30 train-test split
   trainSize <- floor(nrow(df)*0.7)

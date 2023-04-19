@@ -1,5 +1,6 @@
 #Library Downloading and Inclusion
 #install.packages("kernlab")
+#install.packages("rlang")
 library(kernlab)
 
 #Read the CSV file
@@ -13,6 +14,38 @@ df$Class <- factor(df$Class, levels = c("SEKER", "BARBUNYA", "BOMBAY", "CALI","D
 
 # Map the factor levels to numeric values
 df$Class <- as.numeric(df$Class)
+# Check the structure of the dataset
+str(df)
+
+# Check for missing values
+sum(is.na(df))
+
+# Summary statistics
+summary(df)
+
+# Correlation matrix
+cor(df[,1:8])
+
+# Histograms for each column
+par(mfrow=c(3,3))
+for(i in 1:8) {
+  hist(df[,i], main=names(df)[i])
+}
+
+# Boxplots for each column
+par(mfrow=c(3,3))
+for(i in 1:8) {
+  boxplot(df[,i], main=names(df)[i])
+}
+
+# Scatterplot matrix
+pairs(df[,1:8], main="Scatterplot Matrix")
+
+# Cross-tabulation of Class and Area
+table(df$Class, df$Area)
+
+# Mean of each column by Class
+aggregate(df[,1:8], list(df$Class), mean)
 
 # Initialize empty vectors to store iteration numbers and accuracies
 iter_vec <- c()

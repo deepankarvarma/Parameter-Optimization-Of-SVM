@@ -77,7 +77,16 @@ for(sample_num in 1:10){
   # Extract the formula for model training
   X <- as.matrix(trainDataset[, 1:8])
   Y <- as.factor(trainDataset$Class)
-  
+  fitnessFunction<-function(k,n,e){
+  #k stands for Kernel,n for Nu, e for Epsilon
+  #Building the model
+  model<-ksvm(X, Y, kernel=k, nu=n, epsilon=e,kpar=list())
+  #Prediction of Testing Dataset
+  predicted<-predict(model,testDataset[, -1])
+  #Model Evaluation Accuracy
+  accuracy<-round(mean(as.numeric(testDataset$Class==predicted))*100,2)
+  return(accuracy)  
+  }
   # Run the iteration loop for each sample
   for(i in 1:iteration){
     print(paste0("Sample: ", sample_num, ", Iteration: ", i))

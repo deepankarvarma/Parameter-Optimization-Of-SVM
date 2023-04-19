@@ -25,5 +25,5 @@
 15.)ShapeFactor3 (SF3)<br>
 16.)ShapeFactor4 (SF4)<br>
 17.)Class (Seker, Barbunya, Bombay, Cali, Dermosan, Horoz and Sira)<br>
-
+### Scatter Plot
 ![Scatter Plot](https://github.com/deepankarvarma/Parameter-Optimization-Of-SVM/blob/master/Scatter%20Plot.png)

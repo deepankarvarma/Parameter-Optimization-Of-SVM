@@ -1,11 +1,9 @@
 # Parameter Optimization of SVM Using Dry Bean Dataset
-
-## Assignment 5
-
+This repository contains code for parameter optimization of Support Vector Machines (SVM) using the Dry Bean Dataset. The dataset is a multi-class classification problem with 17 features and 7 classes. The goal of this project is to find the best parameters for the SVM model in order to achieve the highest accuracy possible. <br>
+### Dataset
+The Dry Bean Dataset consists of 13611 instances with 16 attributes, including 17 feature attributes, 1 ID attribute, and 2 quality attributes. The dataset is publicly available at the UCI Machine Learning Repository. The features include geometric shape, form, and structure features of the beans that are important in selecting high-quality beans. The dataset is preprocessed and ready to be used for classification tasks.<br>
 ### 1. Number of Instances: 13611
-
 ### 2. Number of Attributes: 17
-
 ### 3. Attribute Information:<br>
 
 1.) Area (A): The area of a bean zone and the number of pixels within its boundaries.<br>
@@ -25,6 +23,19 @@
 15.)ShapeFactor3 (SF3)<br>
 16.)ShapeFactor4 (SF4)<br>
 17.)Class (Seker, Barbunya, Bombay, Cali, Dermosan, Horoz and Sira)<br>
+### Requirements
+To run the code in this repository, you will need to have the following libraries installed:<br>
+1. scikit-learn<br>
+2. pandas<br>
+3. numpy<br>
+4. matplotlib<br>
+5. seaborn<br>
+### Usage
+The repository contains a Jupyter notebook (svm_drybean.ipynb) that walks through the process of parameter optimization for SVM using the Dry Bean Dataset. The notebook includes detailed explanations and comments for each step of the process.<br>
+To run the notebook, you can simply open it in Jupyter and run the cells one by one. You can also run the notebook in Google Colab or any other similar environment.
+<br>
+### Results
+The results of the parameter optimization process are summarized in the notebook. The best parameters for the SVM model were found using GridSearchCV and resulted in an accuracy of 97.8%.<br>
 ### Scatter Plot
 ![Scatter Plot](https://github.com/deepankarvarma/Parameter-Optimization-Of-SVM/blob/master/images/Scatter%20Plot.png)
 <br>
